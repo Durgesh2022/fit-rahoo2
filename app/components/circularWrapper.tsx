@@ -24,9 +24,9 @@ const CircularWrapper = () => {
           Transform your life like this
         </h2>
         <p className="mt-4 text-lg text-gray-300 ">
-          By using our product, you're not just adopting a tool — you're choosing to transform your lifestyle. Imagine waking up every day feeling energized, confident, and focused. Our system is designed to help you build healthy habits, stay consistent, and enjoy the journey.
+         {" By using our product, you're not just adopting a tool — you're choosing to transform your lifestyle. Imagine waking up every day feeling energized, confident, and focused. Our system is designed to help you build healthy habits, stay consistent, and enjoy the journey."}
 
-To get started, all you need to do is follow three simple steps. These steps are backed by science, crafted by experts, and easy to integrate into your daily routine. Ready to unlock the healthiest, most exciting version of yourself?
+{"To get started, all you need to do is follow three simple steps. These steps are backed by science, crafted by experts, and easy to integrate into your daily routine. Ready to unlock the healthiest, most exciting version of yourself?"}
 
 
         </p>
@@ -95,7 +95,7 @@ To get started, all you need to do is follow three simple steps. These steps are
 </div>
 <div className="flex justify-center mt-8 mb-16">
   <button className="px-6 py-3 bg-orange-500 text-white text-lg rounded-lg hover:bg-orange-600 transition">
-    Let's Get Started
+    {"Let's Get Started"}
   </button>
 </div>
 

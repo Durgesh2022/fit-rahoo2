@@ -41,7 +41,7 @@ export const BentoTilt = ({ children, className = "" }) => {
 };
 
 export const BentoCard = ({ src }) => {
-  const hoverButtonRef = useRef(null);
+  // const hoverButtonRef = useRef(null);
 
   return (
     <div className="relative size-full">
