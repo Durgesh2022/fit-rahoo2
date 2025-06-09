@@ -2,17 +2,21 @@
 
 import { useState, useRef } from "react";
 // import { TiLocationArrow } from "react-icons/ti";
+import type { ReactNode } from "react";
 
-export const BentoTilt = ({ children, className = "" }) => {
+interface BentoTiltProps {
+  children: ReactNode;
+  className?: string;
+}
+
+export const BentoTilt = ({ children, className = "" }: BentoTiltProps) => {
   const [transformStyle, setTransformStyle] = useState("");
   const itemRef = useRef(null);
 
-  const handleMouseMove = (event) => {
+  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
     if (!itemRef.current) return;
 
-    const { left, top, width, height } =
-      itemRef.current.getBoundingClientRect();
-
+    const { left, top, width, height } = itemRef.current.getBoundingClientRect();
     const relativeX = (event.clientX - left) / width;
     const relativeY = (event.clientY - top) / height;
 
@@ -40,9 +44,11 @@ export const BentoTilt = ({ children, className = "" }) => {
   );
 };
 
-export const BentoCard = ({ src }) => {
-  // const hoverButtonRef = useRef(null);
+interface BentoCardProps {
+  src: string;
+}
 
+export const BentoCard = ({ src }: BentoCardProps) => {
   return (
     <div className="relative size-full">
       <video
