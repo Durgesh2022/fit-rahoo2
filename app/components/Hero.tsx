@@ -10,13 +10,13 @@ import  EarthCanvas  from "./canvas/Earth";
 const Hero: React.FC = () => {
   const [currentStep, setCurrentStep] = useState<number>(0);
 
-  const firstText: string =
+  const firstText: string = 
     "Are you tired with giving extra money to your Fitness Trainer for personal training?";
   const secondTextHeading = (
-    <>
-      <div className="text-7xl font-grotesk">Welcome to</div>
-      <div className="text-[#fe6107] text-[150px] font-grotesk">Fit Rahoo!!</div>
-    </>
+    <div className="flex flex-col gap-4">
+      <div className="text-7xl font-normal" style={{ fontFamily: "'CAMPUS PERSONAL USE', sans-serif"}}>Welcome to</div>
+      <div className="text-[#fe6107] text-[170px] font-normal" style={{ fontFamily: "'CAMPUS PERSONAL USE', sans-serif", wordSpacing: "-20px",}}>Fit Rahoo<span className="text-[270px]" style={{ fontFamily: "'BAD GRUNGE', sans-serif"}}>!!</span></div>
+    </div>
   );
   const secondTextPara: string =
     "Meet Fit Babaji — your virtual guide who not only shares expert advice on exercise and nutrition but also corrects your form using our AI-powered feature.";
@@ -81,7 +81,8 @@ const Hero: React.FC = () => {
                         hidden: { opacity: 0, y: 20 },
                         visible: { opacity: 1, y: 0 },
                       }}
-                      className="inline-block"
+                      className="inline-block font-normal"
+                      style={{ fontFamily: "'CAMPUS PERSONAL USE', sans-serif"}}
                     >
                       {letter}
                     </motion.span>
@@ -134,7 +135,8 @@ const Hero: React.FC = () => {
             hidden: { opacity: 0, y: 20 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="inline-block"
+          className="inline-block text-white leading-tight mb-16"
+          style={{ fontFamily: "'CAMPUS PERSONAL USE', sans-serif"}}
         >
           {letter}
         </motion.span>
@@ -142,6 +144,12 @@ const Hero: React.FC = () => {
     </span>
   ))}
 </motion.div>
+
+<div className="flex justify-start mt-30">
+  <button className="px-6 py-3 bg-[#fe6107] text-black text-lg rounded-lg hover:bg-orange-600 transition font-normal" style={{ fontFamily: "'CAMPUS PERSONAL USE', sans-serif", marginTop: "16px",}}>
+    {"Let's Get Started"}
+  </button>
+</div>
 
             </>
           )}

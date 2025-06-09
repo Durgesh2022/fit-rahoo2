@@ -14,6 +14,8 @@ const config: Config = {
         inter: ['Inter', 'sans-serif'],
         playfair: ['Playfair Display', 'serif'],
         grotesk: ['Space Grotesk', 'sans-serif'],
+         moodcake: ['Moodcake'],
+        sweety: ['"Sweety Milkys"', 'sans-serif'],
       },
     },
   },

@@ -37,3 +37,59 @@ body {
 .lenis.lenis-smooth {
   scroll-behavior: auto;
 }
+
+
+@font-face {
+  font-family: 'Moodcake';
+  src: url('/fonts/Moodcake.woff2') format('woff2'),
+       url('/fonts/Moodcake.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} 
+
+ @font-face {
+  font-family: 'Sweety Milkys';
+  src: url('/fonts/SweetyMilkysRegular.woff2') format('woff2'),
+       url('/fonts/SweetyMilkysRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BAD GRUNGE';
+  src: url('/fonts/BADGRUNGE.woff2') format('woff2'),
+       url('/fonts/BADGRUNGE.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Comics';
+  src: url('/fonts/SpaceComics.woff2') format('woff2'),
+       url('/fonts/SpaceComics.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CAMPUS PERSONAL USE';
+  src: url('/fonts/CAMPUSPERSONALUSE.woff2') format('woff2'),
+       url('/fonts/CAMPUSPERSONALUSE.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Sports World';
+  src: url('/fonts/SportsWorld.woff2') format('woff2'),
+       url('/fonts/SportsWorld.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
