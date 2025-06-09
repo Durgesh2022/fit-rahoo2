@@ -4,6 +4,8 @@ import styles from './page.module.scss'
 import Image from 'next/image';
 import Lenis from '@studio-freight/lenis'
 import { useTransform, useScroll, motion } from 'framer-motion';
+import type { MotionValue } from "framer-motion";
+
 
 const images = [
   "1.jpg",
@@ -38,7 +40,7 @@ export default function Home() {
   useEffect( () => {
     const lenis = new Lenis()
 
-    const raf = (time) => {
+      const raf = (time: number) => {
       lenis.raf(time)
       requestAnimationFrame(raf)
     }
@@ -73,8 +75,12 @@ export default function Home() {
     
   )
 }
+interface ColumnProps {
+  images: string[];
+  y: MotionValue<number>; // accurate typing from Framer Motion
+}
 
-const Column = ({images, y}) => {
+const Column: React.FC<ColumnProps> = ({ images, y }) => {
   return (
     <motion.div 
       className={styles.column}
