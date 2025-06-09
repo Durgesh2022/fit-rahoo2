@@ -3,14 +3,14 @@
 import React, { Suspense, useEffect, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import { AnimationMixer, Group } from "three";
+import { AnimationMixer, Group, AnimationClip } from "three";
 
 import CanvasLoader from "../Loader";
 
-interface GLTFResult extends ReturnType<typeof useGLTF> {
+type GLTFResult = {
   scene: Group;
-  animations: THREE.AnimationClip[];
-}
+  animations: AnimationClip[];
+};
 
 const Earth: React.FC = () => {
   const { scene, animations } = useGLTF("./muscular_bodybuilder_boxing_fighter copy/scene.gltf") as GLTFResult;
